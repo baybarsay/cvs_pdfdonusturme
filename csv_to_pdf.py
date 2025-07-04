@@ -22,7 +22,7 @@ if 'MİKTAR' not in df.columns:
 
 veri = [list(df.columns)] + df.values.tolist()
 
-# PDF belgesi oluştur
+
 pdf = SimpleDocTemplate("cikti.pdf", pagesize=A4)
 table = Table(veri, repeatRows=1, colWidths=[90, 250, 60, 60])
 
